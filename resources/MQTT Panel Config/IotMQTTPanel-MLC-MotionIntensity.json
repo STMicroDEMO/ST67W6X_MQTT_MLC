@@ -23,7 +23,7 @@
       "disableHostnameCheck": false,
       "port": 8883,
       "cleanSession": true,
-      "connectionType": "tcp-ssl",
+      "connectionType": "ssl",
       "willPayload": "",
       "clientId": "PiMyhMLqow",
       "notifyOnDisconnect": false,
