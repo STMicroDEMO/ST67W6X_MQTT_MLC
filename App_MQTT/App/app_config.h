@@ -59,9 +59,9 @@ typedef enum
 #define LOG_OUTPUT_MODE             LOG_OUTPUT_UART
 
 /* Local Access Point (e.g. gateway, hotspot, etc) connection parameters */
-#define WIFI_SSID                   "TheGangGetsInternet"
+#define WIFI_SSID                   "YOUR_SSID"
 
-#define WIFI_PASSWORD               "Resonancejive"
+#define WIFI_PASSWORD               "YOUR_PASSWORD"
 
 /** SNTP timezone configuration */
 #define WIFI_SNTP_TIMEZONE          1
@@ -90,10 +90,10 @@ typedef enum
 #define MQTT_CLIENT_ID              "mySTM32_772"
 
 /** MQTT Username to be identified on MQTT Broker. Not used in non-secure */
-#define MQTT_USERNAME               "user"
+#define MQTT_USERNAME               "username"
 
 /** MQTT Password to be identified on MQTT Broker. Not used in non-secure */
-#define MQTT_USER_PASSWORD          "pswd"
+#define MQTT_USER_PASSWORD          "password"
 
 /** MQTT Client Certificate. Required when the scheme is greater or equal to 3 */
 #define MQTT_CERTIFICATE            "client_1.crt"
