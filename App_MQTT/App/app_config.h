@@ -63,6 +63,7 @@ typedef enum
 
 #define WIFI_PASSWORD               "YOUR_PSWD"
 
+
 /** SNTP timezone configuration */
 #define WIFI_SNTP_TIMEZONE          1
 
@@ -90,10 +91,10 @@ typedef enum
 #define MQTT_CLIENT_ID              "mySTM32_772"
 
 /** MQTT Username to be identified on MQTT Broker. Not used in non-secure */
-#define MQTT_USERNAME               "user"
+#define MQTT_USERNAME               ""
 
 /** MQTT Password to be identified on MQTT Broker. Not used in non-secure */
-#define MQTT_USER_PASSWORD          "pswd"
+#define MQTT_USER_PASSWORD          ""
 
 /** MQTT Client Certificate. Required when the scheme is greater or equal to 3 */
 #define MQTT_CERTIFICATE            "client_1.crt"
