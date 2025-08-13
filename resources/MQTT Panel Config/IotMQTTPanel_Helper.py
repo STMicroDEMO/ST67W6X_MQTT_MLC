@@ -18,11 +18,11 @@ args = parser.parse_args()
 
 
 print("\nIoTMQTTPanel_Helper")
-with open(args.JSONin, "r", encoding="utf-8") as JSONfile_in:
+with open(args.JSONin, "r") as JSONfile_in:
     print("JSON in: ", args.JSONin)
     jsonin = JSONfile_in.read()
     python_object = json.loads(jsonin)
-    jsonout = json.dumps(python_object, indent=2, ensure_ascii=False)
+    jsonout = json.dumps(python_object, indent=2)
     if args.clientid != None:
         #--clientid option set, inject new clientid
         count = jsonout.count("mySTM32_772")
@@ -56,7 +56,7 @@ with open(args.JSONin, "r", encoding="utf-8") as JSONfile_in:
 
     if args.out != None:
         # --out selected, save output to specified file
-        with open(args.out, "w", encoding="utf-8") as JSONfile_out:
+        with open(args.out, "w") as JSONfile_out:
             print("Saving output to:",args.out)
             JSONfile_out.write(jsonout2)
             JSONfile_out.close()

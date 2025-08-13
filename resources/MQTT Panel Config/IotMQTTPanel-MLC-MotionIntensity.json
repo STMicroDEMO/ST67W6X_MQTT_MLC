@@ -103,7 +103,7 @@
     {
       "comboItemList": [
         {
-          "unit": "°C",
+          "unit": "\u00c2\u00b0C",
           "label": "",
           "notificationFilter": "all",
           "notificationMax": "",
@@ -158,7 +158,7 @@
       "showReceivedTimeStamp": false,
       "payloadMax": 255,
       "payloadMin": 1,
-      "unit": "°C",
+      "unit": "\u00c2\u00b0C",
       "notificationMin": "",
       "notificationMax": "",
       "notificationFilter": "all",
@@ -308,8 +308,8 @@
     {
       "comboItemList": [
         {
-          "unit": "°C",
-          "label": "Temperature ",
+          "unit": "\u00c2\u00b0C",
+          "label": "Temp\u00c3\u00a9rature ",
           "notificationFilter": "all",
           "notificationMax": "",
           "notificationRegex": "",
@@ -394,7 +394,7 @@
     {
       "comboItemList": [
         {
-          "unit": "°C",
+          "unit": "\u00c2\u00b0C",
           "label": "Temperature ",
           "notificationFilter": "all",
           "notificationMax": "",
@@ -540,7 +540,7 @@
           "isJSONPayload": true
         }
       ],
-      "unit": "°C",
+      "unit": "\u00c2\u00b0C",
       "disableDashboardPrefix": false,
       "payloadMax": 50,
       "orientation": "vertical",
@@ -574,7 +574,7 @@
           "isJSONPayload": true
         }
       ],
-      "unit": "°C",
+      "unit": "\u00c2\u00b0C",
       "disableDashboardPrefix": false,
       "orientation": "vertical",
       "payloadMax": 100,
