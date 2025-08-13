@@ -59,9 +59,9 @@ typedef enum
 #define LOG_OUTPUT_MODE             LOG_OUTPUT_UART
 
 /* Local Access Point (e.g. gateway, hotspot, etc) connection parameters */
-#define WIFI_SSID                   "TheGangGetsInternet"
+#define WIFI_SSID                   "YOUR_SSID"
 
-#define WIFI_PASSWORD               "Resonancejive"
+#define WIFI_PASSWORD               "YOUR_PASSWORD"
 
 
 /** SNTP timezone configuration */
