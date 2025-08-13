@@ -59,9 +59,10 @@ typedef enum
 #define LOG_OUTPUT_MODE             LOG_OUTPUT_UART
 
 /* Local Access Point (e.g. gateway, hotspot, etc) connection parameters */
-#define WIFI_SSID                   "SSID"
+#define WIFI_SSID                   "YOUR_SSID"
 
-#define WIFI_PASSWORD               "PASSWORD"
+#define WIFI_PASSWORD               "YOUR_PSWD"
+
 
 /** SNTP timezone configuration */
 #define WIFI_SNTP_TIMEZONE          1
