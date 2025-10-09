@@ -42,13 +42,13 @@ if "%BOARD_ID%" == "NUCLEO-N657X0-Q" (
     echo "Set the boot mode in development mode (BOOT1 switch position is 2-3, BOOT0 switch position doesn't matter)"
     echo "Press any key to continue..."
     pause >nul
-    STM32_Programmer_CLI.exe -c port=swd mode=ur -w %current_dir%..\%BOARD_ID%_Binaries\Bootloader.bin 0x70000000 --extload %CUBEPROGRAMMER%\ExternalLoader\MX25UM51245G_STM32N6570-NUCLEO.stldr
+    STM32_Programmer_CLI.exe -c port=swd mode=ur -w %current_dir%\%BOARD_ID%_Binaries\Bootloader.bin 0x70000000 --extload %CUBEPROGRAMMER%\ExternalLoader\MX25UM51245G_STM32N6570-NUCLEO.stldr
     if %ERRORLEVEL% neq 0 goto :error
     echo "Set the boot mode in boot from external Flash (BOOT0 switch position is 1-2 and BOOT1 switch position is 1-2)"
     echo "Press the reset button then press any key to continue..."
     pause >nul
 ) else (
-    STM32_Programmer_CLI.exe -c port=swd mode=ur -w %current_dir%..\%BOARD_ID%_Binaries\Bootloader.bin 0x08000000 --go
+    STM32_Programmer_CLI.exe -c port=swd mode=ur -w %current_dir%\%BOARD_ID%_Binaries\Bootloader.bin 0x08000000 --go
     if %ERRORLEVEL% neq 0 goto :error
 )
 
@@ -67,21 +67,21 @@ echo NCP Flashing in progress ...
 if %ERRORLEVEL% neq 0 goto :error
 
 if "%BOARD_ID%" == "NUCLEO-H7S3L8" (
-    STM32_Programmer_CLI.exe -c port=swd mode=ur -w %current_dir%..\%BOARD_ID%_Binaries\ST67W6X_CLI_Boot.bin 0x08000000
+    STM32_Programmer_CLI.exe -c port=swd mode=ur -w %current_dir%\%BOARD_ID%_Binaries\ST67W6X_CLI_Boot.bin 0x08000000
     if %ERRORLEVEL% neq 0 goto :error
-    STM32_Programmer_CLI.exe -c port=swd mode=ur -w %current_dir%..\%BOARD_ID%_Binaries\ST67W6X_CLI_Appli.bin 0x70000000 --extload %CUBEPROGRAMMER%\ExternalLoader\MX25UW25645G_NUCLEO-H7S3L8.stldr
+    STM32_Programmer_CLI.exe -c port=swd mode=ur -w %current_dir%\%BOARD_ID%_Binaries\ST67W6X_CLI_Appli.bin 0x70000000 --extload %CUBEPROGRAMMER%\ExternalLoader\MX25UW25645G_NUCLEO-H7S3L8.stldr
     if %ERRORLEVEL% neq 0 goto :error
 ) else if "%BOARD_ID%" == "NUCLEO-N657X0-Q" (
     echo "Set the boot mode in development mode (BOOT1 switch position is 2-3, BOOT0 switch position doesn't matter)"
     echo "Press any key to continue..."
     pause >nul
-    STM32_Programmer_CLI.exe -c port=swd mode=ur -w %current_dir%..\%BOARD_ID%_Binaries\ST67W6X_CLI_FSBL.bin 0x70000000 --extload %CUBEPROGRAMMER%\ExternalLoader\MX25UM51245G_STM32N6570-NUCLEO.stldr
+    STM32_Programmer_CLI.exe -c port=swd mode=ur -w %current_dir%\%BOARD_ID%_Binaries\ST67W6X_CLI_FSBL.bin 0x70000000 --extload %CUBEPROGRAMMER%\ExternalLoader\MX25UM51245G_STM32N6570-NUCLEO.stldr
     if %ERRORLEVEL% neq 0 goto :error
     echo "Set the boot mode in boot from external Flash (BOOT0 switch position is 1-2 and BOOT1 switch position is 1-2)"
     echo "Press the reset button then press any key to continue..."
     pause >nul
 ) else (
-    STM32_Programmer_CLI.exe -c port=swd mode=ur -w %current_dir%..\%BOARD_ID%_Binaries\ST67W6X_CLI.bin 0x08000000 --go
+    STM32_Programmer_CLI.exe -c port=swd mode=ur -w %current_dir%\%BOARD_ID%_Binaries\ST67W6X_CLI.bin 0x08000000 --go
     if %ERRORLEVEL% neq 0 goto :error
 )
 
