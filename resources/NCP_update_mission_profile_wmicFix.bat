@@ -63,7 +63,7 @@ mode %COMADDR% baud=2000000 parity=N data=8 stop=1 >nul
 echo Buffers for %COMADDR% have been flushed
 
 echo NCP Flashing in progress ...
-%current_dir%..\QConn_Flash\QConn_Flash_Cmd.exe --port %COMADDR% --config %current_dir%NCP_Binaries\mission_flash_prog_cfg.ini
+%current_dir%\QConn_Flash\QConn_Flash_Cmd.exe --port %COMADDR% --config %current_dir%NCP_Binaries\mission_flash_prog_cfg.ini
 if %ERRORLEVEL% neq 0 goto :error
 
 if "%BOARD_ID%" == "NUCLEO-H7S3L8" (
